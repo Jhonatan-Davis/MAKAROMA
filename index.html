@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKAROMA - Menu Digital</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+
+    <header>
+        <div class="header-conteudo">
+            <img src="./assets/images/logo-makaroma.png" alt="Logo MAKAROMA" class="logo-makaroma">
+            <div class="texto-logo">
+                <h1 class="logo-titulo">MAKAROMA</h1>
+                <p class="logo-subtitulo">La Pasta, Pizza e Petiscaria</p>
+                <span class="alerta-delivery">🛵 Somente Delivery</span>
+            </div>
+        </div>
+        <nav class="menu-categorias">
+            <a href="#pizzas" class="btn-categoria">Pizzas</a>
+            <a href="#massas" class="btn-categoria">Massas</a>
+            <a href="#petiscos" class="btn-categoria">Petiscos</a>
+            <a href="#bebidas" class="btn-categoria">Bebidas</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <br id="pizzas"><br>
+        <h2 class="sessao-titulo">🍕 Pizzas</h2>
+
+
+        <h3 style="text-align: center; color: #ff6600; margin: 20px 0;">Crie a sua Pizza</h3>
+<div class="cardapio-container">
+    <div class="card-pizza card-montagem">
+        <img src="/assets/images/metade.png" alt="Pizza 2 Sabores" style="object-fit: cover;">
+        <div class="card-info">
+            <h3>Pizza 2 Sabores (Meio a Meio)</h3>
+            <p style="font-size: 0.85em; color: #666; margin-bottom: 10px;">* O valor final será o do sabor mais caro. Escolha exatamente 2 metades.</p>
+            
+            <div class="sabores-lista" style="max-height: 140px; overflow-y: auto; text-align: left; padding: 10px; border: 1px solid #eee; border-radius: 5px; margin-bottom: 15px; background: #fafafa;">
+ <label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Calabresa" data-preco="50.00"> Calabresa (R$ 50,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Portuguesa" data-preco="50.00"> Portuguesa (R$ 50,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Bacon" data-preco="50.00"> Bacon (R$ 50,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Margarita" data-preco="50.00"> Margarita (R$ 50,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Bauru" data-preco="50.00"> Bauru (R$ 50,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Toscana Catupiry" data-preco="50.00"> Toscana Catupiry (R$ 50,00)</label>
+
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="4 Queijos" data-preco="60.00"> 4 Queijos (R$ 60,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Atum" data-preco="60.00"> Atum (R$ 60,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Vegetariana" data-preco="60.00"> Vegetariana (R$ 60,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Pepperoni" data-preco="60.00"> Pepperoni (R$ 60,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Verona" data-preco="60.00"> Verona (R$ 60,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Caipira" data-preco="60.00"> Caipira (R$ 60,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Peruana" data-preco="60.00"> Peruana (R$ 60,00)</label>
+
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Sertão" data-preco="70.00"> Sertão (R$ 70,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Costela" data-preco="70.00"> Costela (R$ 70,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Makaroma" data-preco="70.00"> Makaroma (R$ 70,00)</label>
+
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Banana c/ Canela" data-preco="50.00"> Banana c/ Canela (R$ 50,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Bis" data-preco="50.00"> Bis (R$ 50,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Romeu e Julieta" data-preco="50.00"> Romeu e Julieta (R$ 50,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Ouro Branco" data-preco="50.00"> Ouro Branco (R$ 50,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Sonho de Valsa" data-preco="50.00"> Sonho de Valsa (R$ 50,00)</label>
+<label style="display: block; margin-bottom: 8px;"><input type="checkbox" class="checkbox-sabor" value="Sensação" data-preco="50.00"> Sensação (R$ 50,00)</label>
+                </div>
+
+            <div class="card-rodape">
+                <span class="preco" id="preco-dinamico-pizza" style="font-size: 1.1em; font-weight: bold;">R$ 50,00</span>
+                <button class="btn-add" id="btn-add-2sabores" disabled onclick="adicionarPizza2Sabores()" style="background-color: #ccc; cursor: not-allowed;">+ Adicionar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <h3 style="text-align: center; color: #ff6600; margin: 20px 0;">Pizzas Tradicionais</h3>
+        <div class="cardapio-container">
+            <div class="card-pizza">
+                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500&q=80" alt="Pizza Margarita">
+                <div class="card-info">
+                    <h3>Margarita</h3>
+                    <p>Molho, mussarela, tomate fatiado, orégano e manjericão.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+              <option value="Média" data-preco="35.00">Média</option>
+            <option value="Grande" data-preco="50.00"selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 50,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza Margarita')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+    <img src="assets/images/calabresa.png" alt="Pizza">
+    <div class="card-info">
+        <h3>Pizza de Calabresa</h3>
+        <p>Molho de tomate, mussarela, calabresa e cebola.</p>
+        
+        <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+         <option value="Média" data-preco="35.00">Média</option>
+            <option value="Grande" data-preco="50.00"selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 50,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza de Calabresa')">+ Adicionar</button>
+        </div>
+    </div>
+</div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/portuguesa.png" alt="Pizza Portuguesa">
+                <div class="card-info">
+                    <h3>Portuguesa</h3>
+                    <p>Molho, mussarela, presunto, ovo, pimentão, cebola, orégano, azeitona, calabresa e tomate fatiado.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+           <option value="Média" data-preco="35.00">Média</option>
+            <option value="Grande" data-preco="50.00"selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 50,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza Portuguesa')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/bacon.png" alt="Pizza Bacon">
+                <div class="card-info">
+                    <h3>Bacon</h3>
+                    <p>Molho, mussarela, bacon fatiado, orégano e azeitona.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+             <option value="Média" data-preco="35.00">Média</option>
+            <option value="Grande" data-preco="50.00"selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 50,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza de Bacon')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_bauru.png" alt="Pizza Bauru">
+                <div class="card-info">
+                    <h3>Bauru</h3>
+                    <p>Molho, mussarela, presunto, tomate, azeitona e orégano.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+             <option value="Média" data-preco="35.00">Média</option>
+            <option value="Grande" data-preco="50.00"selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 50,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza Bauru')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_toscana.png" alt="Pizza Toscana Catupiry">
+                <div class="card-info">
+                    <h3>Toscana Catupiry</h3>
+                    <p>Molho, mussarela, calabresa ralada, catupiry, orégano e azeitona.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+            <option value="Média" data-preco="35.00">Média</option>
+            <option value="Grande" data-preco="50.00"selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 50,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza Toscana catupiry')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #ff6600; margin: 20px 0;">Pizzas Especiais / Exclusivas</h3>
+        <div class="cardapio-container">
+            <div class="card-pizza">
+                <span class="badge badge-novo">Especial</span>
+                <img src="./assets/images/pizza_makaroma.png" alt="Pizza Makaroma">
+                <div class="card-info">
+                    <h3>Makaroma</h3>
+                    <p>Molho, mussarela, picanha em tiras, cebola, coberta com provolone e orégano.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+           <option value="Média" data-preco="55.00" >Média</option>
+            <option value="Grande" data-preco="70.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 70,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza Makaroma')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=500&q=80" alt="Pizza Peperoni">
+                <div class="card-info">
+                    <h3>Peperoni</h3>
+                    <p>Molho, mussarela, pepperoni, orégano, cebola e azeitona.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+            <option value="Média" data-preco="45.00" >Média</option>
+            <option value="Grande" data-preco="60.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 60,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza de Peperoni')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_4queijo.png" alt="Pizza 4 Queijos">
+                <div class="card-info">
+                    <h3>4 Queijos</h3>
+                    <p>Molho, mussarela, gorgonzola, parmesão, provolone e orégano.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+           <option value="Média" data-preco="45.00" >Média</option>
+            <option value="Grande" data-preco="60.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 60,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza 4 queijos')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_atum.png" alt="Pizza Atum">
+                <div class="card-info">
+                    <h3>Atum</h3>
+                    <p>Molho, mussarela, atum, cebola, orégano e azeitona.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+            <option value="Média" data-preco="45.00" >Média</option>
+            <option value="Grande" data-preco="60.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 60,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza de Atum')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_vegetariana.png" alt="Pizza Vegetariana">
+                <div class="card-info">
+                    <h3>Vegetariana</h3>
+                    <p>Molho, mussarela, brócolis, cebola, tomate, ervilha, milho, rúcula, orégano e azeitona.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+            <option value="Média" data-preco="45.00" >Média</option>
+            <option value="Grande" data-preco="60.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 60,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza Vegetariana')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_verona.png" alt="Pizza Verona">
+                <div class="card-info">
+                    <h3>Verona</h3>
+                    <p>Molho, mussarela, tomate seco, rúcula, orégano e azeitona.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+           <option value="Média" data-preco="45.00" >Média</option>
+            <option value="Grande" data-preco="60.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 60,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza Verona')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_caipira.png" alt="Pizza Caipira">
+                <div class="card-info">
+                    <h3>Caipira</h3>
+                    <p>Molho, mussarela, frango desfiado, milho, bacon, catupiry, orégano e azeitona.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+            <option value="Média" data-preco="45.00" >Média</option>
+            <option value="Grande" data-preco="60.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 60,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza Caipira')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_peruana.png" alt="Pizza Peruana">
+                <div class="card-info">
+                    <h3>Peruana</h3>
+                    <p>Molho, mussarela, peito de peru, milho, cebola, cream cheese, orégano e azeitona.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+            <option value="Média" data-preco="45.00" >Média</option>
+            <option value="Grande" data-preco="60.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 60,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza Peruana')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_sertao.png" alt="Pizza Sertão">
+                <div class="card-info">
+                    <h3>Sertão</h3>
+                    <p>Molho, mussarela, carne seca, palmito, milho, cebola, azeitona, orégano e cream cheese.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+            <option value="Média" data-preco="55.00" >Média</option>
+            <option value="Grande" data-preco="70.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 70,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza Sertão')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+            
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_costela.png" alt="Pizza Costela">
+                <div class="card-info">
+                    <h3>Costela</h3>
+                    <p>Molho, mussarela, costela desfiada, cebola, barbecue, pimenta biquinho, azeitona, orégano e cream cheese.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+            <option value="Média" data-preco="55.00" >Média</option>
+            <option value="Grande" data-preco="70.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 70,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza de Costela')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #ff6600; margin: 20px 0;">Pizzas Doces</h3>
+        <div class="cardapio-container">
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_banana.png" alt="Pizza Banana c/ Canela">
+                <div class="card-info">
+                    <h3>Banana c/ Canela</h3>
+                    <p>Mussarela, banana fatiada e canela.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+
+            <option value="Média" data-preco="35.00" >Média</option>
+            <option value="Grande" data-preco="50.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 50,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza Banana c/ canela')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_bis.png" alt="Pizza Bis">
+                <div class="card-info">
+                    <h3>Bis</h3>
+                    <p>Chocolate ao leite e bombom Bis.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+          
+            <option value="Média" data-preco="35.00" >Média</option>
+            <option value="Grande" data-preco="50.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 50,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza de Bis')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_romeu.png" alt="Pizza Romeu e Julieta">
+                <div class="card-info">
+                    <h3>Romeu e Julieta</h3>
+                    <p>Mussarela e goiabada.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+            <option value="Média" data-preco="35.00" >Média</option>
+            <option value="Grande" data-preco="50.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 50,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza Romeu e Julieta')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_ouro.png" alt="Pizza Ouro Branco">
+                <div class="card-info">
+                    <h3>Ouro Branco</h3>
+                    <p>Chocolate ao leite e bombom Ouro Branco.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+
+            <option value="Média" data-preco="35.00" >Média</option>
+            <option value="Grande" data-preco="50.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 50,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza de Ouro Branco')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_sonhovalsa.png" alt="Pizza Sonho de Valsa">
+                <div class="card-info">
+                    <h3>Sonho de Valsa</h3>
+                    <p>Chocolate ao leite e bombom Sonho de Valsa.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+            <option value="Média" data-preco="35.00" >Média</option>
+            <option value="Grande" data-preco="50.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 50,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza de Sonho de valsa')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/pizza_sensacao.png" alt="Pizza Sensação">
+                <div class="card-info">
+                    <h3>Sensação</h3>
+                    <p>Chocolate ao leite e morango.</p>
+                    <select class="select-tamanho" onchange="atualizarPrecoCard(this)" style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd;">
+            <option value="Média" data-preco="35.00" >Média</option>
+            <option value="Grande" data-preco="50.00" selected>Grande</option>
+        </select>
+
+        <div class="card-rodape">
+            <span class="preco">R$ 50,00</span>
+            <button class="btn-add" onclick="adicionarPizzaComTamanho(this, 'Pizza de Sensação')">+ Adicionar</button>
+        </div>
+                </div>
+            </div>
+        </div>
+
+        <br id="massas"><br>
+        <h2 class="sessao-titulo">🍝 Monte sua Massa</h2>
+        <div class="cardapio-container">
+            
+            <script>
+                const acompanhamentosHTML = `
+                    <label><input type="checkbox" value="Mussarela"> Mussarela</label>
+                    <label><input type="checkbox" value="Presunto"> Presunto</label>
+                    <label><input type="checkbox" value="Bacon"> Bacon</label>
+                    <label><input type="checkbox" value="Calabresa"> Calabresa</label>
+                    <label><input type="checkbox" value="Milho"> Milho</label>
+                    <label><input type="checkbox" value="Ervilha"> Ervilha</label>
+                    <label><input type="checkbox" value="Palmito"> Palmito</label>
+                    <label><input type="checkbox" value="Azeitona"> Azeitona</label>
+                    <label><input type="checkbox" value="Ovo de Codorna"> Ovo Codorna</label>
+                    <label><input type="checkbox" value="Champignon"> Champignon</label>
+                    <label><input type="checkbox" value="Cenoura Ralada"> Cenoura Ralada</label>
+                    <label><input type="checkbox" value="Cebola"> Cebola</label>
+                    <label><input type="checkbox" value="Parmesão Ralado"> Parmesão</label>
+                    <label><input type="checkbox" value="Uva Passa"> Uva Passa</label>
+                    <label><input type="checkbox" value="Brócolis"> Brócolis</label>
+                    <label><input type="checkbox" value="Alho Frito"> Alho Frito</label>
+                    <label><input type="checkbox" value="Cheiro Verde"> Cheiro Verde</label>
+                    <label><input type="checkbox" value="Orégano"> Orégano</label>
+                    <label><input type="checkbox" value="Pimenta Biquinho"> P. Biquinho</label>
+                    <label><input type="checkbox" value="Batata Palha"> Batata Palha</label>
+                `;
+            </script>
+
+            <div class="card-pizza card-montagem">
+                <img src="./assets/images/fettucine.png" alt="Fettucine">
+                <div class="card-info">
+                    <h3>Fettucine</h3>
+                    <div class="grupo-opcao">
+                        <select class="select-molho" onchange="mostrarIngredientes(this)">
+                            <option value="escolha">Escolha o Molho</option>
+                            <option value="4 Queijos">4 Queijos</option>
+                            <option value="Molho Sugo">Molho Sugo</option>
+                            <option value="Bolonhesa">Bolonhesa</option>
+                            <option value="Alho e Óleo">Alho e Óleo</option>
+                        </select>
+                    </div>
+                    <div class="container-acompanhamentos" style="display: none; margin-top: 15px; text-align: left;">
+                        <label style="font-weight: bold; font-size: 0.9em;">Ingredientes / Finalização (Até 6 grátis):</label>
+                        <p class="dica-ingredientes" style="font-size: 0.8em; color: #666; margin-bottom: 10px;">* Acima de 6, será cobrado R$ 4,00 por item extra.</p>
+                        <div class="grid-ingredientes">
+                            <label><input type="checkbox" value="Mussarela"> Mussarela</label><label><input type="checkbox" value="Presunto"> Presunto</label><label><input type="checkbox" value="Bacon"> Bacon</label><label><input type="checkbox" value="Calabresa"> Calabresa</label><label><input type="checkbox" value="Milho"> Milho</label><label><input type="checkbox" value="Ervilha"> Ervilha</label><label><input type="checkbox" value="Palmito"> Palmito</label><label><input type="checkbox" value="Azeitona"> Azeitona</label><label><input type="checkbox" value="Ovo de Codorna"> Ovo Codorna</label><label><input type="checkbox" value="Champignon"> Champignon</label><label><input type="checkbox" value="Cenoura Ralada"> Cenoura Ralada</label><label><input type="checkbox" value="Cebola"> Cebola</label><label><input type="checkbox" value="Parmesão Ralado"> Parmesão</label><label><input type="checkbox" value="Uva Passa"> Uva Passa</label><label><input type="checkbox" value="Brócolis"> Brócolis</label><label><input type="checkbox" value="Alho Frito"> Alho Frito</label><label><input type="checkbox" value="Cheiro Verde"> Cheiro Verde</label><label><input type="checkbox" value="Orégano"> Orégano</label><label><input type="checkbox" value="Pimenta Biquinho"> P. Biquinho</label><label><input type="checkbox" value="Batata Palha"> Batata Palha</label>
+                        </div>
+                    </div>
+                    <div class="card-rodape" style="margin-top: 15px;">
+                        <span class="preco">R$ 30,00</span>
+                        <button class="btn-add btn-add-massa" onclick="adicionarMassaAoCarrinho(this, 'Fettucine', 30.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza card-montagem">
+                <img src="./assets/images/parafuso.png" alt="Parafuso">
+                <div class="card-info">
+                    <h3>Parafuso</h3>
+                    <div class="grupo-opcao">
+                        <select class="select-molho" onchange="mostrarIngredientes(this)">
+                            <option value="escolha">Escolha o Molho</option>
+                            <option value="4 Queijos">4 Queijos</option>
+                            <option value="Molho Sugo">Molho Sugo</option>
+                            <option value="Bolonhesa">Bolonhesa</option>
+                            <option value="Alho e Óleo">Alho e Óleo</option>
+                        </select>
+                    </div>
+                    <div class="container-acompanhamentos" style="display: none; margin-top: 15px; text-align: left;">
+                        <label style="font-weight: bold; font-size: 0.9em;">Ingredientes / Finalização (Até 6 grátis):</label>
+                        <p class="dica-ingredientes" style="font-size: 0.8em; color: #666; margin-bottom: 10px;">* Acima de 6, será cobrado R$ 4,00 por item extra.</p>
+                        <div class="grid-ingredientes">
+                            <label><input type="checkbox" value="Mussarela"> Mussarela</label><label><input type="checkbox" value="Presunto"> Presunto</label><label><input type="checkbox" value="Bacon"> Bacon</label><label><input type="checkbox" value="Calabresa"> Calabresa</label><label><input type="checkbox" value="Milho"> Milho</label><label><input type="checkbox" value="Ervilha"> Ervilha</label><label><input type="checkbox" value="Palmito"> Palmito</label><label><input type="checkbox" value="Azeitona"> Azeitona</label><label><input type="checkbox" value="Ovo de Codorna"> Ovo Codorna</label><label><input type="checkbox" value="Champignon"> Champignon</label><label><input type="checkbox" value="Cenoura Ralada"> Cenoura Ralada</label><label><input type="checkbox" value="Cebola"> Cebola</label><label><input type="checkbox" value="Parmesão Ralado"> Parmesão</label><label><input type="checkbox" value="Uva Passa"> Uva Passa</label><label><input type="checkbox" value="Brócolis"> Brócolis</label><label><input type="checkbox" value="Alho Frito"> Alho Frito</label><label><input type="checkbox" value="Cheiro Verde"> Cheiro Verde</label><label><input type="checkbox" value="Orégano"> Orégano</label><label><input type="checkbox" value="Pimenta Biquinho"> P. Biquinho</label><label><input type="checkbox" value="Batata Palha"> Batata Palha</label>
+                        </div>
+                    </div>
+                    <div class="card-rodape" style="margin-top: 15px;">
+                        <span class="preco">R$ 30,00</span>
+                        <button class="btn-add btn-add-massa" onclick="adicionarMassaAoCarrinho(this, 'Parafuso', 30.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza card-montagem">
+                <img src="./assets/images/espaguete.png" alt="Espaguete">
+                <div class="card-info">
+                    <h3>Espaguete</h3>
+                    <div class="grupo-opcao">
+                        <select class="select-molho" onchange="mostrarIngredientes(this)">
+                            <option value="escolha">Escolha o Molho</option>
+                            <option value="4 Queijos">4 Queijos</option>
+                            <option value="Molho Sugo">Molho Sugo</option>
+                            <option value="Bolonhesa">Bolonhesa</option>
+                            <option value="Alho e Óleo">Alho e Óleo</option>
+                        </select>
+                    </div>
+                    <div class="container-acompanhamentos" style="display: none; margin-top: 15px; text-align: left;">
+                        <label style="font-weight: bold; font-size: 0.9em;">Ingredientes / Finalização (Até 6 grátis):</label>
+                        <p class="dica-ingredientes" style="font-size: 0.8em; color: #666; margin-bottom: 10px;">* Acima de 6, será cobrado R$ 4,00 por item extra.</p>
+                        <div class="grid-ingredientes">
+                            <label><input type="checkbox" value="Mussarela"> Mussarela</label><label><input type="checkbox" value="Presunto"> Presunto</label><label><input type="checkbox" value="Bacon"> Bacon</label><label><input type="checkbox" value="Calabresa"> Calabresa</label><label><input type="checkbox" value="Milho"> Milho</label><label><input type="checkbox" value="Ervilha"> Ervilha</label><label><input type="checkbox" value="Palmito"> Palmito</label><label><input type="checkbox" value="Azeitona"> Azeitona</label><label><input type="checkbox" value="Ovo de Codorna"> Ovo Codorna</label><label><input type="checkbox" value="Champignon"> Champignon</label><label><input type="checkbox" value="Cenoura Ralada"> Cenoura Ralada</label><label><input type="checkbox" value="Cebola"> Cebola</label><label><input type="checkbox" value="Parmesão Ralado"> Parmesão</label><label><input type="checkbox" value="Uva Passa"> Uva Passa</label><label><input type="checkbox" value="Brócolis"> Brócolis</label><label><input type="checkbox" value="Alho Frito"> Alho Frito</label><label><input type="checkbox" value="Cheiro Verde"> Cheiro Verde</label><label><input type="checkbox" value="Orégano"> Orégano</label><label><input type="checkbox" value="Pimenta Biquinho"> P. Biquinho</label><label><input type="checkbox" value="Batata Palha"> Batata Palha</label>
+                        </div>
+                    </div>
+                    <div class="card-rodape" style="margin-top: 15px;">
+                        <span class="preco">R$ 30,00</span>
+                        <button class="btn-add btn-add-massa" onclick="adicionarMassaAoCarrinho(this, 'Espaguete', 30.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza card-montagem">
+                <img src="./assets/images/talharim.png" alt="Talharim">
+                <div class="card-info">
+                    <h3>Talharim</h3>
+                    <div class="grupo-opcao">
+                        <select class="select-molho" onchange="mostrarIngredientes(this)">
+                            <option value="escolha">Escolha o Molho</option>
+                            <option value="4 Queijos">4 Queijos</option>
+                            <option value="Molho Sugo">Molho Sugo</option>
+                            <option value="Bolonhesa">Bolonhesa</option>
+                            <option value="Alho e Óleo">Alho e Óleo</option>
+                        </select>
+                    </div>
+                    <div class="container-acompanhamentos" style="display: none; margin-top: 15px; text-align: left;">
+                        <label style="font-weight: bold; font-size: 0.9em;">Ingredientes / Finalização (Até 6 grátis):</label>
+                        <p class="dica-ingredientes" style="font-size: 0.8em; color: #666; margin-bottom: 10px;">* Acima de 6, será cobrado R$ 4,00 por item extra.</p>
+                        <div class="grid-ingredientes">
+                            <label><input type="checkbox" value="Mussarela"> Mussarela</label><label><input type="checkbox" value="Presunto"> Presunto</label><label><input type="checkbox" value="Bacon"> Bacon</label><label><input type="checkbox" value="Calabresa"> Calabresa</label><label><input type="checkbox" value="Milho"> Milho</label><label><input type="checkbox" value="Ervilha"> Ervilha</label><label><input type="checkbox" value="Palmito"> Palmito</label><label><input type="checkbox" value="Azeitona"> Azeitona</label><label><input type="checkbox" value="Ovo de Codorna"> Ovo Codorna</label><label><input type="checkbox" value="Champignon"> Champignon</label><label><input type="checkbox" value="Cenoura Ralada"> Cenoura Ralada</label><label><input type="checkbox" value="Cebola"> Cebola</label><label><input type="checkbox" value="Parmesão Ralado"> Parmesão</label><label><input type="checkbox" value="Uva Passa"> Uva Passa</label><label><input type="checkbox" value="Brócolis"> Brócolis</label><label><input type="checkbox" value="Alho Frito"> Alho Frito</label><label><input type="checkbox" value="Cheiro Verde"> Cheiro Verde</label><label><input type="checkbox" value="Orégano"> Orégano</label><label><input type="checkbox" value="Pimenta Biquinho"> P. Biquinho</label><label><input type="checkbox" value="Batata Palha"> Batata Palha</label>
+                        </div>
+                    </div>
+                    <div class="card-rodape" style="margin-top: 15px;">
+                        <span class="preco">R$ 30,00</span>
+                        <button class="btn-add btn-add-massa" onclick="adicionarMassaAoCarrinho(this, 'Talharim', 30.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza card-montagem">
+                <img src="./assets/images/farfalle.png" alt="Farfalle">
+                <div class="card-info">
+                    <h3>Farfalle</h3>
+                    <div class="grupo-opcao">
+                        <select class="select-molho" onchange="mostrarIngredientes(this)">
+                            <option value="escolha">Escolha o Molho</option>
+                            <option value="4 Queijos">4 Queijos</option>
+                            <option value="Molho Sugo">Molho Sugo</option>
+                            <option value="Bolonhesa">Bolonhesa</option>
+                            <option value="Alho e Óleo">Alho e Óleo</option>
+                        </select>
+                    </div>
+                    <div class="container-acompanhamentos" style="display: none; margin-top: 15px; text-align: left;">
+                        <label style="font-weight: bold; font-size: 0.9em;">Ingredientes / Finalização (Até 6 grátis):</label>
+                        <p class="dica-ingredientes" style="font-size: 0.8em; color: #666; margin-bottom: 10px;">* Acima de 6, será cobrado R$ 4,00 por item extra.</p>
+                        <div class="grid-ingredientes">
+                            <label><input type="checkbox" value="Mussarela"> Mussarela</label><label><input type="checkbox" value="Presunto"> Presunto</label><label><input type="checkbox" value="Bacon"> Bacon</label><label><input type="checkbox" value="Calabresa"> Calabresa</label><label><input type="checkbox" value="Milho"> Milho</label><label><input type="checkbox" value="Ervilha"> Ervilha</label><label><input type="checkbox" value="Palmito"> Palmito</label><label><input type="checkbox" value="Azeitona"> Azeitona</label><label><input type="checkbox" value="Ovo de Codorna"> Ovo Codorna</label><label><input type="checkbox" value="Champignon"> Champignon</label><label><input type="checkbox" value="Cenoura Ralada"> Cenoura Ralada</label><label><input type="checkbox" value="Cebola"> Cebola</label><label><input type="checkbox" value="Parmesão Ralado"> Parmesão</label><label><input type="checkbox" value="Uva Passa"> Uva Passa</label><label><input type="checkbox" value="Brócolis"> Brócolis</label><label><input type="checkbox" value="Alho Frito"> Alho Frito</label><label><input type="checkbox" value="Cheiro Verde"> Cheiro Verde</label><label><input type="checkbox" value="Orégano"> Orégano</label><label><input type="checkbox" value="Pimenta Biquinho"> P. Biquinho</label><label><input type="checkbox" value="Batata Palha"> Batata Palha</label>
+                        </div>
+                    </div>
+                    <div class="card-rodape" style="margin-top: 15px;">
+                        <span class="preco">R$ 30,00</span>
+                        <button class="btn-add btn-add-massa" onclick="adicionarMassaAoCarrinho(this, 'Farfalle', 30.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza card-montagem">
+                <img src="./assets/images/nhoque.png" alt="Nhoque de Batata">
+                <div class="card-info">
+                    <h3>Nhoque de Batata</h3>
+                    <div class="grupo-opcao">
+                        <select class="select-molho" onchange="mostrarIngredientes(this)">
+                            <option value="escolha">Escolha o Molho</option>
+                            <option value="4 Queijos">4 Queijos</option>
+                            <option value="Molho Sugo">Molho Sugo</option>
+                            <option value="Bolonhesa">Bolonhesa</option>
+                            <option value="Alho e Óleo">Alho e Óleo</option>
+                        </select>
+                    </div>
+                    <div class="container-acompanhamentos" style="display: none; margin-top: 15px; text-align: left;">
+                        <label style="font-weight: bold; font-size: 0.9em;">Ingredientes / Finalização (Até 6 grátis):</label>
+                        <p class="dica-ingredientes" style="font-size: 0.8em; color: #666; margin-bottom: 10px;">* Acima de 6, será cobrado R$ 4,00 por item extra.</p>
+                        <div class="grid-ingredientes">
+                            <label><input type="checkbox" value="Mussarela"> Mussarela</label><label><input type="checkbox" value="Presunto"> Presunto</label><label><input type="checkbox" value="Bacon"> Bacon</label><label><input type="checkbox" value="Calabresa"> Calabresa</label><label><input type="checkbox" value="Milho"> Milho</label><label><input type="checkbox" value="Ervilha"> Ervilha</label><label><input type="checkbox" value="Palmito"> Palmito</label><label><input type="checkbox" value="Azeitona"> Azeitona</label><label><input type="checkbox" value="Ovo de Codorna"> Ovo Codorna</label><label><input type="checkbox" value="Champignon"> Champignon</label><label><input type="checkbox" value="Cenoura Ralada"> Cenoura Ralada</label><label><input type="checkbox" value="Cebola"> Cebola</label><label><input type="checkbox" value="Parmesão Ralado"> Parmesão</label><label><input type="checkbox" value="Uva Passa"> Uva Passa</label><label><input type="checkbox" value="Brócolis"> Brócolis</label><label><input type="checkbox" value="Alho Frito"> Alho Frito</label><label><input type="checkbox" value="Cheiro Verde"> Cheiro Verde</label><label><input type="checkbox" value="Orégano"> Orégano</label><label><input type="checkbox" value="Pimenta Biquinho"> P. Biquinho</label><label><input type="checkbox" value="Batata Palha"> Batata Palha</label>
+                        </div>
+                    </div>
+                    <div class="card-rodape" style="margin-top: 15px;">
+                        <span class="preco">R$ 35,00</span>
+                        <button class="btn-add btn-add-massa" onclick="adicionarMassaAoCarrinho(this, 'Nhoque de Batata', 35.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-pizza card-montagem">
+                <img src="./assets/images/capeletti_carne.png" alt="Capeleti de Carne">
+                <div class="card-info">
+                    <h3>Capeleti de Carne</h3>
+                    <div class="grupo-opcao">
+                        <select class="select-molho" onchange="mostrarIngredientes(this)">
+                            <option value="escolha">Escolha o Molho</option>
+                            <option value="4 Queijos">4 Queijos</option>
+                            <option value="Molho Sugo">Molho Sugo</option>
+                            <option value="Bolonhesa">Bolonhesa</option>
+                            <option value="Alho e Óleo">Alho e Óleo</option>
+                        </select>
+                    </div>
+                    <div class="container-acompanhamentos" style="display: none; margin-top: 15px; text-align: left;">
+                        <label style="font-weight: bold; font-size: 0.9em;">Ingredientes / Finalização (Até 6 grátis):</label>
+                        <p class="dica-ingredientes" style="font-size: 0.8em; color: #666; margin-bottom: 10px;">* Acima de 6, será cobrado R$ 4,00 por item extra.</p>
+                        <div class="grid-ingredientes">
+                            <label><input type="checkbox" value="Mussarela"> Mussarela</label><label><input type="checkbox" value="Presunto"> Presunto</label><label><input type="checkbox" value="Bacon"> Bacon</label><label><input type="checkbox" value="Calabresa"> Calabresa</label><label><input type="checkbox" value="Milho"> Milho</label><label><input type="checkbox" value="Ervilha"> Ervilha</label><label><input type="checkbox" value="Palmito"> Palmito</label><label><input type="checkbox" value="Azeitona"> Azeitona</label><label><input type="checkbox" value="Ovo de Codorna"> Ovo Codorna</label><label><input type="checkbox" value="Champignon"> Champignon</label><label><input type="checkbox" value="Cenoura Ralada"> Cenoura Ralada</label><label><input type="checkbox" value="Cebola"> Cebola</label><label><input type="checkbox" value="Parmesão Ralado"> Parmesão</label><label><input type="checkbox" value="Uva Passa"> Uva Passa</label><label><input type="checkbox" value="Brócolis"> Brócolis</label><label><input type="checkbox" value="Alho Frito"> Alho Frito</label><label><input type="checkbox" value="Cheiro Verde"> Cheiro Verde</label><label><input type="checkbox" value="Orégano"> Orégano</label><label><input type="checkbox" value="Pimenta Biquinho"> P. Biquinho</label><label><input type="checkbox" value="Batata Palha"> Batata Palha</label>
+                        </div>
+                    </div>
+                    <div class="card-rodape" style="margin-top: 15px;">
+                        <span class="preco">R$ 35,00</span>
+                        <button class="btn-add btn-add-massa" onclick="adicionarMassaAoCarrinho(this, 'Capeleti de Carne', 35.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza card-montagem">
+                <img src="./assets/images/ravioli.png" alt="Ravioli de Frango">
+                <div class="card-info">
+                    <h3>Ravioli de Frango</h3>
+                    <div class="grupo-opcao">
+                        <select class="select-molho" onchange="mostrarIngredientes(this)">
+                            <option value="escolha">Escolha o Molho</option>
+                            <option value="4 Queijos">4 Queijos</option>
+                            <option value="Molho Sugo">Molho Sugo</option>
+                            <option value="Bolonhesa">Bolonhesa</option>
+                            <option value="Alho e Óleo">Alho e Óleo</option>
+                        </select>
+                    </div>
+                    <div class="container-acompanhamentos" style="display: none; margin-top: 15px; text-align: left;">
+                        <label style="font-weight: bold; font-size: 0.9em;">Ingredientes / Finalização (Até 6 grátis):</label>
+                        <p class="dica-ingredientes" style="font-size: 0.8em; color: #666; margin-bottom: 10px;">* Acima de 6, será cobrado R$ 4,00 por item extra.</p>
+                        <div class="grid-ingredientes">
+                            <label><input type="checkbox" value="Mussarela"> Mussarela</label><label><input type="checkbox" value="Presunto"> Presunto</label><label><input type="checkbox" value="Bacon"> Bacon</label><label><input type="checkbox" value="Calabresa"> Calabresa</label><label><input type="checkbox" value="Milho"> Milho</label><label><input type="checkbox" value="Ervilha"> Ervilha</label><label><input type="checkbox" value="Palmito"> Palmito</label><label><input type="checkbox" value="Azeitona"> Azeitona</label><label><input type="checkbox" value="Ovo de Codorna"> Ovo Codorna</label><label><input type="checkbox" value="Champignon"> Champignon</label><label><input type="checkbox" value="Cenoura Ralada"> Cenoura Ralada</label><label><input type="checkbox" value="Cebola"> Cebola</label><label><input type="checkbox" value="Parmesão Ralado"> Parmesão</label><label><input type="checkbox" value="Uva Passa"> Uva Passa</label><label><input type="checkbox" value="Brócolis"> Brócolis</label><label><input type="checkbox" value="Alho Frito"> Alho Frito</label><label><input type="checkbox" value="Cheiro Verde"> Cheiro Verde</label><label><input type="checkbox" value="Orégano"> Orégano</label><label><input type="checkbox" value="Pimenta Biquinho"> P. Biquinho</label><label><input type="checkbox" value="Batata Palha"> Batata Palha</label>
+                        </div>
+                    </div>
+                    <div class="card-rodape" style="margin-top: 15px;" id="petiscos">
+                        <span class="preco">R$ 35,00</span>
+                        <button class="btn-add btn-add-massa" onclick="adicionarMassaAoCarrinho(this, 'Ravioli de Frango', 35.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+        
+        <br><br>
+        <h2 class="sessao-titulo">🍗 Petiscos</h2>
+        <div class="cardapio-container">
+            
+            <div class="card-pizza">
+                <img src="./assets/images/batata.png" alt="Batata Frita 500g">
+                <div class="card-info">
+                    <h3>Batata Frita 500g</h3>
+                    <div class="card-rodape">
+                        <span class="preco">R$ 25,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Batata Frita 500g', 25.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/batatabec.png" alt="Batata Frita Especial">
+                <div class="card-info">
+                    <h3>Batata Frita Especial</h3>
+                    <p>Bacon e a sua escolha: Cheddar ou Requeijão.</p>
+                    <div class="card-rodape">
+                        <span class="preco">R$ 28,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Batata Frita Especial', 28.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/bolinho_costela.png" alt="Bolinho de Costela">
+                <div class="card-info">
+                    <h3>Bolinho de Costela</h3>
+                    <div class="card-rodape">
+                        <span class="preco">R$ 30,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Bolinho de Costela', 30.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/frango_pass_fritas.png" alt="Frango a Passarinho">
+                <div class="card-info">
+                    <h3>Frango a Passarinho</h3>
+                    <div class="card-rodape">
+                        <span class="preco">R$ 30,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Frango a Passarinho', 30.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/lombo_tilapia.png" alt="Lombo de Filé de Tilápia">
+                <div class="card-info">
+                    <h3>Lombo de Filé de Tilápia</h3>
+                    <div class="card-rodape">
+                        <span class="preco">R$ 45,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Lombo de Filé de Tilápia', 45.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/tabua_frios.png" alt="Tábua de Frios">
+                <div class="card-info">
+                    <h3>Tábua de Frios</h3>
+                    <p>Presunto, mussarela, salame italiano, palmito, azeitona, provolone, ovo de codorna e molho da casa.</p>
+                    <div class="card-rodape" id="bebidas">
+                        <span class="preco">R$ 55,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Tábua de Frios', 55.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <br><br>
+        <h2 class="sessao-titulo">🥤 Bebidas</h2>
+        <div class="cardapio-container">
+            <div class="card-pizza">
+                <img src="./assets/images/cocalt.jpeg" alt="Coca-Cola Normal">
+                <div class="card-info">
+                    <h3>Coca-Cola (Lata)</h3>
+                    <div class="card-rodape">
+                        <span class="preco">R$ 5,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Coca-Cola Lata', 5.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-pizza">
+                <img src="./assets/images/cocaltzero.jpeg" alt="Coca-Cola Lata Zero">
+                <div class="card-info">
+                    <h3>Coca-Cola Zero (Lata)</h3>
+                    <div class="card-rodape">
+                        <span class="preco">R$ 5,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Coca-Cola Zero', 5.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+        <div class="card-pizza">
+            <img src="./assets/images/coca2.jpeg" alt="Coca-Cola Normal">
+            <div class="card-info">
+                <h3>Coca-Cola 2 Litros</h3>
+                <div class="card-rodape">
+                    <span class="preco">R$ 12,00</span>
+                    <button class="btn-add" onclick="adicionarAoCarrinho('Coca-Cola 2 Litros', 12.00)">+ Adicionar</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card-pizza">
+            <img src="./assets/images/coca20.jpeg" alt="Coca-Cola Normal">
+            <div class="card-info">
+                <h3>Coca-Cola 2 litros Zero</h3>
+                <div class="card-rodape">
+                    <span class="preco">R$ 13,00</span>
+                    <button class="btn-add" onclick="adicionarAoCarrinho('Coca-Cola 2 Litros Zero', 13.00)">+ Adicionar</button>
+                </div>
+            </div>
+        </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/guaranalt.webp" alt="Guaraná Antarctica">
+                <div class="card-info">
+                    <h3>Guaraná Antarctica (Lata)</h3>
+                    <div class="card-rodape">
+                        <span class="preco">R$ 5,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Guaraná Antarctica', 5.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="./assets/images/guarana0.webp" alt="Guaraná Zero">
+                <div class="card-info">
+                    <h3>Guaraná Zero (Lata)</h3>
+                    <div class="card-rodape">
+                        <span class="preco">R$ 5,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Guaraná Zero', 5.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="assets/images/mineiro2.jpeg" alt="Sucos">
+                <div class="card-info">
+                    <h3>Mineiro 2 Litros</h3>
+                    <div class="card-rodape">
+                        <span class="preco">R$ 10,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Mineiro 2 litros', 10.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-pizza">
+                <img src="assets/images/cremes.png" alt="Cremes">
+                <div class="card-info">
+                    <h3>Cremes 500ml</h3>
+                    <p>Morango, Maracujá</p>
+                    <div class="card-rodape">
+                        <span class="preco">R$ 22,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Cremes 500ml', 22.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="btn-sacola" class="btn-flutuante" onclick="abrirSacola()" style="display: none;">
+        🛒 Sacola (<span id="contador-sacola">0</span>)
+    </div>
+
+    <div id="modal-sacola" class="modal-overlay" style="display: none;">
+    <div class="modal-conteudo">
+        <button class="btn-fechar" onclick="fecharSacola()">X Fechar</button>
+        <h2>Sua Sacola</h2>
+        
+        <div id="lista-itens-sacola"></div>
+
+        
+        <div class="modal-rodape">
+            <h3>Total: R$ <span id="valor-total-sacola">0,00</span></h3>
+            <button class="btn-finalizar" onclick="enviarPedidoWhatsApp()" style="width: 100%; padding: 15px; background-color: #28a745; color: white; border: none; border-radius: 8px; font-weight: bold; font-size: 1.1em; cursor: pointer; margin-top: 10px;">
+    Finalizar Pedido via WhatsApp
+</button>
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <div class="footer-conteudo">
+        <p class="aviso-ilustrativo">* Todas as imagens dos produtos são meramente ilustrativas.</p>
+        
+        <div class="instagram-container">
+            <a href="https://www.instagram.com/_makaroma_/" target="_blank" class="insta-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <span>@_makaroma_</span>
+            </a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 MAKAROMA - La Pasta, Pizza e Petiscaria<br>
+            Todos os direitos reservados.
+        </p>
+    </div>
+</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

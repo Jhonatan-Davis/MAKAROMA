@@ -1,0 +1,1080 @@
+
+:root {
+    --vermelho-italia: #D32F2F;
+    --vermelho-escuro: #B71C1C; 
+    --verde-italia: #388E3C;
+    --fundo: #e0dddd; 
+    --texto-escuro: #2D3436; 
+    --texto-claro: #636E72;
+    --branco: #FFFFFF;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto-escuro);
+    padding-bottom: 90px;
+    -webkit-font-smoothing: antialiased; /* Deixa a fonte mais suave no celular */
+}
+
+header {
+    background-color: var(--branco);
+    text-align: center;
+    padding: 15px 0 10px 0;
+    /* Sombra mais suave e espalhada (efeito vidro/app) */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.04); 
+    border-top: 4px solid var(--vermelho-italia);
+    position: sticky; /* Faz o cabeçalho grudar no topo ao rolar a página */
+    top: 0;
+    z-index: 100;
+}
+
+.header-conteudo {
+    display: flex;
+    flex-direction: column; /* Mantém a logo em cima e o texto embaixo no celular */
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-logo {
+    text-align: center; /* Texto centralizado no celular */
+    margin-top: 8px;
+}
+
+.logo-titulo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--texto-escuro);
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+/* O .logo-subtitulo e o .logo-makaroma você já tem, pode manter os seus! */
+.logo-makaroma {
+    max-height: 95px; /* Diminuímos um pouco o tamanho máximo */
+    width: auto;
+    margin-bottom: 2px;
+}
+.logo-subtitulo {
+    font-size: 13px;
+    color: #B71C1C;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+
+.sessao-titulo {
+    color: var(--texto-escuro);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 20px 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #E2E8F0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subtitulo{
+    color: var(--texto-escuro);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 30px 20px 15px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cardapio-container {
+    padding: 0 15px;
+}
+
+.card-pizza {
+    background-color: var(--branco);
+    border-radius: 20px;
+    overflow: hidden;
+    /* Sombra difusa premium que faz o card "flutuar" */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+    margin-bottom: 25px;
+    border: 1px solid rgba(0,0,0,0.02); /* Borda quase invisível pra dar acabamento */
+}
+
+/* Container que alinha os itens lado a lado no PC e um embaixo do outro no celular */
+.cardapio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 15px;
+    margin-bottom: 40px;
+}
+
+/* Deixa todas as imagens exatamente do mesmo tamanho */
+.card-pizza img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Corta a imagem perfeitamente sem amassar */
+    border-radius: 12px 12px 0 0;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--texto-escuro);
+}
+
+.card-info p {
+    font-size: 13px;
+    color: var(--texto-claro);
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.card-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preco {
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--verde-italia);
+}
+
+/* Botão muito mais chamativo e convidativo */
+.btn-add {
+    background: linear-gradient(135deg, var(--vermelho-italia) 0%, var(--vermelho-escuro) 100%);
+    color: var(--branco);
+    border: none;
+    padding: 10px 22px;
+    border-radius: 30px; /* Botão em formato de pílula */
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(211, 47, 47, 0.25); /* Sombra colorida no botão */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-add:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(211, 47, 47, 0.2);
+}
+
+/* ========================================= */
+/* BOTÃO FLUTUANTE DO CARRINHO               */
+/* ========================================= */
+.carrinho-flutuante {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    background: linear-gradient(135deg, var(--verde-italia) 0%, #2E7D32 100%);
+    color: var(--branco);
+    padding: 16px 24px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(56, 142, 60, 0.4); /* Sombra verde difusa */
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+.carrinho-flutuante span {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* (O restante do código do modal foi mantido internamente sem mudanças visuais drásticas no mobile, mas com a nova fonte) */
+.modal-carrinho { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 2000; justify-content: center; align-items: flex-end; backdrop-filter: blur(3px); }
+.modal-conteudo { background-color: var(--branco); width: 100%; max-width: 500px; height: 85vh; border-radius: 25px 25px 0 0; padding: 25px; overflow-y: auto; display: flex; flex-direction: column; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); }
+.modal-cabecalho { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; margin-bottom: 20px; padding-bottom: 15px; }
+.modal-cabecalho h2 { font-weight: 600; font-size: 20px; }
+.btn-fechar { background: none; border: none; font-size: 24px; color: var(--texto-claro); cursor: pointer; }
+.item-carrinho { display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 12px 0; font-size: 14px; color: var(--texto-escuro); }
+.total-carrinho { font-size: 18px; text-align: right; margin-bottom: 25px; margin-top: 15px; color: var(--verde-italia); font-weight: 600; }
+.formulario-checkout h3 { font-size: 15px; font-weight: 600; margin-bottom: 10px; color: var(--texto-escuro); }
+.formulario-checkout input, .formulario-checkout select { width: 100%; padding: 14px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 12px; font-family: 'Poppins', sans-serif; font-size: 14px; background-color: #fafafa; outline: none; transition: border-color 0.2s; }
+.formulario-checkout input:focus { border-color: var(--verde-italia); background-color: #fff; }
+.btn-finalizar { width: 100%; background: linear-gradient(135deg, var(--verde-italia) 0%, #2E7D32 100%); color: var(--branco); border: none; padding: 16px; border-radius: 12px; font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 15px rgba(56, 142, 60, 0.3); }
+
+
+.menu-categorias {
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; 
+    white-space: nowrap;
+    top: 0; 
+    z-index: 900; 
+    margin-top: 10px;
+   display: flex;
+   justify-content: center;
+}
+
+
+.menu-categorias::-webkit-scrollbar {
+    display: none;
+}
+
+.btn-categoria {
+    background-color: var(--fundo);
+    color: var(--texto-escuro);
+    text-decoration: none;
+    padding: 6px 6px; 
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600; 
+    border: 1px solid #E2E8F0;
+    transition: 0.2s;
+}
+
+/* Efeito quando clica ou passa o mouse no PC */
+.btn-categoria:hover, .btn-categoria:active {
+    background-color: var(--vermelho-italia);
+    color: var(--branco);
+    border-color: var(--vermelho-italia);
+}
+
+/* ========================================= */
+/* ETIQUETAS (BADGES) E ZOOM NAS IMAGENS     */
+/* ========================================= */
+.badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #FF9800; /* Laranja de destaque */
+    color: var(--branco);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 10;
+    letter-spacing: 0.5px;
+}
+
+.badge-novo {
+    background-color: var(--verde-italia); /* Verde para novidades */
+}
+
+/* O Zoom mágico na foto (funciona quando passa o mouse no PC) */
+.card-pizza img {
+    transition: transform 0.4s ease;
+}
+
+.card-pizza:hover img {
+    transform: scale(1.08); 
+}
+
+
+footer {
+    background-color: var(--branco);
+    text-align: center;
+    padding: 30px 20px 100px; /* 100px embaixo pra não brigar com o carrinho */
+    margin-top: 40px;
+    border-top: 1px solid #E2E8F0;
+    color: var(--texto-claro);
+}
+
+.footer-nome {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--texto-escuro);
+    margin-bottom: 8px;
+}
+
+.footer-info {
+    font-size: 13px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.footer-creditos {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+
+
+/* ========================================= */
+/* ESTILOS DE EDIÇÃO DOS ITENS NO CARRINHO   */
+/* ========================================= */
+.item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 15px 0;
+    gap: 10px;
+}
+
+.item-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.item-info strong {
+    font-size: 14px;
+    color: var(--texto-escuro);
+}
+
+.item-preco {
+    font-size: 13px;
+    color: var(--verde-italia);
+    font-weight: 600;
+}
+
+.item-controles {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* O fundo cinza clarinho dos botões de + e - */
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.controle-quantidade button {
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--texto-escuro);
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controle-quantidade button:hover {
+    background-color: #e2e8f0; /* Fica um pouco mais escuro ao passar o mouse */
+}
+
+.controle-quantidade span {
+    width: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Botão da lixeira */
+.btn-remover {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    padding: 5px;
+    opacity: 0.7;
+}
+
+.btn-remover:hover {
+    transform: scale(1.15); /* Dá um zoomzinho quando vai clicar na lixeira */
+    opacity: 1;
+}
+
+/* ========================================= */
+/* ESTILOS DO FORMULÁRIO DE MASSAS           */
+/* ========================================= */
+.card-montagem {
+    border: 2px solid var(--vermelho-italia); /* Destaca o card de montagem */
+}
+
+.grupo-opcao {
+    margin-bottom: 15px;
+}
+
+.grupo-opcao label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--texto-escuro);
+}
+
+.grupo-opcao select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: #fafafa;
+    outline: none;
+}
+
+.dica-ingredientes {
+    font-size: 11px;
+    color: var(--texto-claro);
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.grid-ingredientes {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas para os ingredientes */
+    gap: 8px;
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.grid-ingredientes label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+/* Deixa as caixinhas de marcar (checkbox) com a cor da marca */
+.grid-ingredientes input[type="checkbox"] {
+    accent-color: var(--vermelho-italia);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Etiqueta de Somente Delivery no Cabeçalho */
+.alerta-delivery {
+    display: inline-block;
+    background-color: #FFC107; /* Amarelo chamativo tipo iFood */
+    color: #000000;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 6px rgba(255, 193, 7, 0.4);
+    align-self: center; /* Centraliza no celular */
+}
+
+/* Garante que no PC a etiqueta fique alinhada à esquerda com o resto do texto */
+@media (min-width: 768px) {
+    .alerta-delivery {
+        align-self: flex-start; 
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sessao-titulo {
+        max-width: 1160px;
+        margin: 40px auto 20px;
+        padding-left: 0;
+    }
+
+    /* Transforma a lista numa grade (Grid) automática */
+    .cardapio-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 30px; /* Espaço entre os cartões */
+        max-width: 1200px;
+        margin: 0 auto; /* Centraliza a grade na tela */
+        padding: 0 20px;
+    }
+
+    /* Remove a margem inferior antiga, pois o 'gap' do grid já faz isso */
+    .card-pizza {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    /* Efeito extra para PC: o card "levanta" quando passa o mouse */
+    .card-pizza:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+
+    /* Garante que o botão fique sempre alinhado embaixo, mesmo se o texto for curto */
+    .card-info {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-info p {
+        flex-grow: 1;
+    }
+
+    /* Deixa o botão do carrinho com um tamanho elegante na tela grande */
+    .carrinho-flutuante {
+        max-width: 500px;
+        bottom: 30px;
+    }
+    .menu-categorias{
+        background-color: #ffffff;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    /* Transformando o header numa barra horizontal */
+    header {
+        display: flex;
+        justify-content: space-between; /* Extrema esquerda e extrema direita */
+        align-items: center;
+        padding: 15px 5%; /* Margem nas laterais da tela grande */
+    }
+
+    /* Colocando a logo e o texto lado a lado no PC */
+    .header-conteudo {
+        flex-direction: row; 
+        gap: 15px; /* Espaço entre a imagem e as letras */
+    }
+
+    /* Alinhando o texto à esquerda no PC */
+    .texto-logo {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    /* Jogando o menu para a direita e alinhando com a logo */
+    .menu-categorias {
+        margin-top: 0; 
+        justify-content: flex-end; 
+        flex-wrap: wrap; /* Caso adicione muitas categorias no futuro */
+    }
+}
+/* ========================================== */
+/* ESTILOS DA JANELA DE PEDIDO (MODAL)        */
+/* ========================================== */
+
+/* O fundo escuro que cobre a tela toda */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto transparente */
+    z-index: 9999; /* Garante que fique por cima de tudo na tela */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza a caixinha branca */
+}
+
+/* A caixinha branca onde ficam os itens */
+.modal-conteudo {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 500px; /* Não deixa ficar gigante no PC */
+    max-height: 90vh; /* Se tiver muitos itens, não vaza da tela */
+    border-radius: 15px;
+    padding: 25px;
+    overflow-y: auto; /* Cria uma barra de rolagem interna se precisar */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+/* O cabeçalho dentro do modal */
+.modal-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.modal-cabecalho h2 {
+    margin: 0;
+    color: #b30000; /* Cor vermelha para combinar com a logo */
+}
+
+/* Botão de Fechar (X) */
+.btn-fechar {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+}
+
+.btn-fechar:hover {
+    color: #ff0000;
+}
+
+/* Estilo da lista de itens no carrinho */
+.item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-preco {
+    color: #008000;
+    font-weight: bold;
+}
+
+.item-controles {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.controle-quantidade button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.btn-remover {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Seção de Dados do Cliente */
+.dados-cliente {
+    margin-top: 20px;
+}
+
+.dados-cliente h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.dados-cliente input, 
+.dados-cliente select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    box-sizing: border-box; /* Garante que não passe da largura máxima */
+}
+
+/* Rodapé do Modal e botão de enviar */
+.modal-rodape {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+}
+
+.total-modal {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.btn-finalizar {
+    width: 100%;
+    background-color: #25D366; /* Verde do WhatsApp */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-finalizar:hover {
+    background-color: #1ebe57;
+}
+.grid-ingredientes {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide em duas colunas */
+    gap: 8px;
+    font-size: 0.85em;
+}
+.grid-ingredientes label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* =========================================
+   CARRINHO / SACOLA FLUTUANTE
+   ========================================= */
+
+/* O botão que fica flutuando no canto inferior direito */
+.btn-flutuante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #e74c3c; /* Vermelho combinando com o tema de comida */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Fica por cima de tudo na tela */
+    transition: transform 0.2s;
+}
+
+.btn-flutuante:hover {
+    transform: scale(1.05);
+}
+
+/* Fundo escuro que cobre a tela quando a sacola abre */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* A caixinha branca da sacola */
+.modal-conteudo {
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    max-height: 80vh; /* Se tiver muitos itens, cria uma barra de rolagem */
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-conteudo h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Botão de fechar a sacola */
+.btn-fechar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #888;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.btn-fechar:hover {
+    color: #e74c3c;
+}
+
+/* Rodapé onde fica o total e o botão do WhatsApp */
+.modal-rodape {
+    margin-top: 20px;
+    border-top: 2px solid #eee;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.modal-rodape h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+}
+
+/* Botão verde do WhatsApp */
+.btn-finalizar {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-finalizar:hover {
+    background-color: #1ebe57;
+}
+/* ==========================================
+   ESTILIZAÇÃO DA SACOLA (MODERNIZAÇÃO)
+   ========================================== */
+
+/* Animação para a sacola aparecer suavemente */
+.modal-overlay {
+    backdrop-filter: blur(4px); /* Desfoca o fundo levemente */
+    transition: all 0.3s ease;
+}
+
+.modal-conteudo {
+    border: none;
+    border-radius: 20px; /* Bordas mais arredondadas */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    padding: 25px;
+}
+
+/* Título da Sacola */
+.modal-conteudo h2 {
+    font-size: 1.5rem;
+    color: var(--vermelho-italia);
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+/* Cada Item dentro da Sacola */
+.item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.item-info strong {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+}
+
+.item-preco {
+    color: var(--verde-italia);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Controles de Quantidade (+ e -) */
+.item-controles {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 50px; /* Estilo pílula */
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+}
+
+.controle-quantidade button {
+    background: none;
+    border: none;
+    color: var(--vermelho-italia);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+.controle-quantidade span {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Botão de Lixeira */
+.btn-remover {
+    background: #fff5f5;
+    border: 1px solid #ffe3e3;
+    border-radius: 8px;
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-remover:hover {
+    background: #ffe3e3;
+    transform: scale(1.1);
+}
+
+/* Seção de Dados do Cliente */
+.dados-cliente {
+    background: #fdfdfd;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.dados-cliente input, 
+.dados-cliente select, 
+.dados-cliente textarea {
+    border: 1.5px solid #e1e1e1 !important;
+    font-size: 0.95rem;
+    transition: 0.3s;
+    outline: none;
+    margin-bottom: 12px;
+}
+
+.dados-cliente input:focus, 
+.dados-cliente textarea:focus {
+    border-color: var(--verde-italia) !important;
+    box-shadow: 0 0 0 3px rgba(56, 142, 60, 0.1);
+}
+
+/* Rodapé da Sacola (Total e Botão) */
+.modal-rodape {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+}
+
+.modal-rodape h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+#valor-total-sacola {
+    color: var(--verde-italia);
+}
+
+/* Botão Finalizar */
+.btn-finalizar {
+    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-finalizar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+}
+/* ==========================================
+   ESTILO DO RODAPÉ (FOOTER)
+   ========================================== */
+footer {
+    background-color: var(--branco); /* Fundo branco para destacar do fundo cinza */
+    padding: 40px 20px;
+    margin-top: 60px;
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+}
+
+.aviso-ilustrativo {
+    font-size: 0.8rem;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.instagram-container {
+    margin-bottom: 25px;
+}
+
+.insta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--texto-escuro);
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #f8f9fa;
+}
+
+/* Efeito ao passar o mouse ou clicar */
+.insta-link:hover {
+    color: #E1306C; /* Cor clássica do Instagram */
+    background-color: #fff0f5;
+    transform: translateY(-3px);
+}
+
+.insta-link svg {
+    stroke: currentColor;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: #aaa;
+    line-height: 1.5;
+}
+.select-tamanho {
+    background-color: #f9f9f9;
+    font-family: inherit;
+    color: var(--texto-escuro);
+    cursor: pointer;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+.select-tamanho:focus {
+    border-color: var(--vermelho-italia);
+}
